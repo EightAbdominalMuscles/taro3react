@@ -8,8 +8,6 @@ declare module "*.less";
 declare module "*.scss";
 declare module "*.sass";
 declare module "*.styl";
-declare module "@/*";
-declare module "@@/*";
 
 // @ts-ignore
 declare const process: {

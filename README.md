@@ -43,7 +43,7 @@ git commit -m 'fix: xxxxx'
    将所有 prettier 规则导入 ESlint 中
 
 vscode 安装插件
-ESLint 可以让格式不对的地方进行高亮
+ESLint 让格式不对的地方进行高亮
 
 > ### Prettier 专注于代码排版(提供了一套完美的代码排版)，但不会关心你的代码质量。 https://prettier.io/docs/en/install.html https://github.com/prettier/prettier/tree/main/docs
 >

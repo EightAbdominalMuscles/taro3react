@@ -2,7 +2,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { View, Button, Text } from "@tarojs/components";
 import { AtButton } from "taro-ui";
-import { add, minus, asyncAdd } from "../../actions/counter";
+import { add, minus, asyncAdd } from "@/actions/counter";
 
 import "./index.scss";
 
@@ -64,8 +64,7 @@ class Index extends Component {
   componentDidHide() {}
 
   render() {
-    let a = 1;
-    console.log(11110);
+    let a = null;
     return (
       <View className="index">
         <Button className="add_btn" onClick={this.props.add}>

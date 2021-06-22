@@ -23,11 +23,16 @@
     "typeRoots": [// 声明文件目录，默认时node_modules/@types
       "node_modules/@types",
       "global.d.ts"
-    ]
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"]
+    },
   },
   "exclude": [ // 指定编译器需要排除的文件或文件夹。
     "node_modules",
     "dist"
   ],
+  
   "compileOnSave": false// 设置保存文件的时候自动编译，但需要编译器支持。
 }

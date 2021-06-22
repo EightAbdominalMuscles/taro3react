@@ -5,9 +5,13 @@
     index.scss 全局公用scss，不需要引用 (修改时无法监听到，需要重启动项目才能生效)
 ```
 
-### Eslint 规范
+### 检查代码质量与风格
+
+### Eslint 规范 (检查代码质量与风格的工具) https://github.com/eslint/eslint
 
 1. taro 自带规范 -> 规范文档：https://www.npmjs.com/package/eslint-config-taro
+
+### P
 
 ### commit 提交规范： https://github.com/conventional-changelog/commitlint#getting-started
 

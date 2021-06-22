@@ -21,8 +21,8 @@ const config = {
     resource: path.resolve(__dirname, "..", "src/styles/index.scss"),
   },
   alias: {
-    "@": path.resolve(__dirname, "..", "src"),
-    "@@": path.resolve(__dirname, "..", "/"),
+    "@/*": path.resolve(__dirname, "..", "src/*"),
+    "@@/*": path.resolve(__dirname, "..", "./*"),
   },
 
   outputRoot: `dist/${process.env.TARO_ENV}`,

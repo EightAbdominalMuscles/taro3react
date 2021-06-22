@@ -1,0 +1,33 @@
+
+{
+  "compilerOptions": {
+    "target": "es2017",  // 目标语言的版本
+    "module": "commonjs", // 指定生成代码的模板标准
+    "removeComments": false, // 删除所有注释，除了以/!*开头的版权信息。
+    "preserveConstEnums": true, // 保留const和enum声明。查看const enums documentation了解详情。
+    "moduleResolution": "node", //决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）。查看模块解析了解详情。
+    "experimentalDecorators": true, // 启用实验性的ES装饰器。
+    "noImplicitAny": false, // 不允许隐式的any类型
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib", // 指定输出目录
+    "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)
+    "noUnusedParameters": true,// 检查未使用的函数参数(只提示不报错)
+    "strictNullChecks": true, // 不允许把null、undefined赋值给其他类型的变量
+    "sourceMap": true, // 生成相应的.map文件。
+    "noFallthroughCasesInSwitch": true, // 防止switch语句贯穿(即如果没有break语句后面不会执行)
+    "baseUrl": ".",// 解析非相对模块的基地址，默认是当前目录
+    "rootDir": ".", // 指定输出文件目录(用于输出)，用于控制输出目录结构
+    "jsx": "react-jsx",
+    "allowJs": true,// 允许编译器编译JS，JSX文件
+    "resolveJsonModule": true, //启用导入.json文件
+    "typeRoots": [// 声明文件目录，默认时node_modules/@types
+      "node_modules/@types",
+      "global.d.ts"
+    ]
+  },
+  "exclude": [ // 指定编译器需要排除的文件或文件夹。
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false// 设置保存文件的时候自动编译，但需要编译器支持。
+}

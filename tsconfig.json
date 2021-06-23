@@ -7,7 +7,7 @@
     "preserveConstEnums": true, // 保留const和enum声明。查看const enums documentation了解详情。
     "moduleResolution": "node", //决定如何处理模块。或者是"Node"对于Node.js/io.js，或者是"Classic"（默认）。查看模块解析了解详情。
     "experimentalDecorators": true, // 启用实验性的ES装饰器。
-    "noImplicitAny": false, // 不允许隐式的any类型
+    "noImplicitAny": true, // 不允许隐式的any类型
     "allowSyntheticDefaultImports": true,
     "outDir": "lib", // 指定输出目录
     "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)

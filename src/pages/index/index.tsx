@@ -1,10 +1,10 @@
-import { Component } from "react";
-import { connect } from "react-redux";
-import { View, Button, Text } from "@tarojs/components";
-import { AtButton } from "taro-ui";
-import { add, minus, asyncAdd } from "@/actions/counter";
+import { Component } from 'react';
+import { connect } from 'react-redux';
+import { View, Button, Text } from '@tarojs/components';
+import { AtButton } from 'taro-ui';
+import { add, minus, asyncAdd } from '@/actions/counter';
 
-import "./index.scss";
+import './index.scss';
 
 // #region 书写注意
 //
@@ -64,16 +64,15 @@ class Index extends Component {
   componentDidHide() {}
 
   render() {
-    let a = null;
     return (
-      <View className="index">
-        <Button className="add_btn" onClick={this.props.add}>
+      <View className='index'>
+        <Button className='add_btn' onClick={this.props.add}>
           +
         </Button>
-        <Button className="add_btn" onClick={this.props.dec}>
+        <Button className='add_btn' onClick={this.props.dec}>
           -
         </Button>
-        <AtButton className="dec_btn" onClick={this.props.asyncAdd}>
+        <AtButton className='dec_btn' onClick={this.props.asyncAdd}>
           async
         </AtButton>
         <View>

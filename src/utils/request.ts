@@ -1,3 +1,6 @@
+// https://taro-docs.jd.com/taro/docs/apis/network/request/request
+// https://github.com/didilinkin/elf-taro-cli 相关链接
+
 import { getStorageSync, addInterceptor, request } from '@tarojs/taro';
 
 import interceptors from './interceptors';

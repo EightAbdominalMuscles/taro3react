@@ -5,6 +5,10 @@
     index.scss 全局公用scss，不需要引用 (修改时无法监听到，需要重启动项目才能生效)
 ```
 
+###
+
+Taro 多版本共存问题 https://taro-docs.jd.com/taro/docs/GETTING-STARTED#taro-%E5%A4%9A%E7%89%88%E6%9C%AC%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98
+
 ### commit 提交规范： https://github.com/conventional-changelog/commitlint#getting-started
 
 - value

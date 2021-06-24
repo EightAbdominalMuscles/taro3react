@@ -37,10 +37,10 @@ interface Index {
 }
 const concatReduxs: Function = connect;
 @concatReduxs(
-  ({ counter }: { counter: any }) => ({
+  ({ counter }) => ({
     counter,
   }),
-  (dispatch: any) => ({
+  (dispatch) => ({
     add() {
       dispatch(add());
     },

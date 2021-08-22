@@ -67,7 +67,7 @@ class Index extends Component {
     return (
       <View className='index'>
         <Button className='add_btn' onClick={this.props.add}>
-          -
+          +
         </Button>
         <Button className='add_btn' onClick={this.props.dec}>
           -

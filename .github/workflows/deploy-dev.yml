@@ -1,9 +1,8 @@
 name: deploy for dev
-
 on: 
   push:
     branches:
-      - dev # 只针对 dev 分支
+      - dev
       paths:
         - '.github/workflows/**'
         - 'src/**'
@@ -11,7 +10,6 @@ on:
         - 'docker-compose.yml'
         # - '__test__/**'
         - 'src/**'
-
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest

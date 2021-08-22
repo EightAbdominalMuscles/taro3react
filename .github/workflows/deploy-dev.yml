@@ -15,7 +15,7 @@ jobs:
   deploy-dev:
     runs-on: ubuntu-latest
     steps:
-      - user: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: set ssh key # 临时设置ssh key
         run: |
           mkdir -p ~/.ssh/

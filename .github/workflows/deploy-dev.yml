@@ -1,5 +1,5 @@
 name: deploy for dev
-on: 
+on:
   push:
     branches:
       - dev
@@ -13,7 +13,6 @@ on:
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
-
     steps:
       - user: actions/checkout@v2
       - name: set ssh key # 临时设置ssh key
@@ -22,6 +21,7 @@ jobs:
           echo "${{secrets.WFP_ID_RSA}}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan "122.51.11.120" >> ~/.ssh/known_hosts
+      - name: deploy #部署
         run: |
           ssh root@122.51.11.120 "
           cd /home/zhangyu/dockerdemo;
@@ -32,6 +32,5 @@ jobs:
           docker-compose build tarodemo;
           docker-componse up -d;
           "
-      - name: deploy #部署
       - name: delete ssh key #删除 ssh key
         run: rm -rf ~/.ssh/id_rsa

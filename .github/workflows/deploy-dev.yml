@@ -4,13 +4,13 @@ on:
     branches:
       - master
       - dev
-      paths:
-        - '.github/workflows/**'
-        - 'src/**'
-        - 'Dockerfile'
-        - 'docker-compose.yml'
-        # - '__test__/**'
-        - 'src/**'
+    paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'Dockerfile'
+      - 'docker-compose.yml'
+      # - '__test__/**'
+      - 'src/**'
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest

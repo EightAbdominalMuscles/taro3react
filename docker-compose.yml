@@ -1,0 +1,19 @@
+version: '3'
+services:
+  tarodemo: # service name
+    build:
+      context: . # 当前目录
+      dockerfile: Dockerfile # 基于 Dockerfile构建
+    image: tarodemo
+    container_name: tarodemo1
+    ports:
+      - 8081:10086 # 宿主机通过8081 访问
+  editor-redis: # service name ,重要！
+    image: redis # 引用官网 redis 镜像
+    container_name: redis1
+    ports: 
+      # 宿主机， 可以用 127.0.0.1:6378 即可链接容器中的数据库 `redis-cli -h 127.0.0.1 -p 6378`
+      # 但是，其他 docker 容器不能，因为此时127.0.0.1 是docker容器本身，而不是宿主机
+      - 6378:6379
+    environment: 
+      - TZ=Asia/Shanghai # 设置时区

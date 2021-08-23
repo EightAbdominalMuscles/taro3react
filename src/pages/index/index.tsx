@@ -70,7 +70,7 @@ class Index extends Component {
           +
         </Button>
         <Button className='add_btn' onClick={this.props.dec}>
-          -
+          --
         </Button>
         <AtButton className='dec_btn' onClick={this.props.asyncAdd}>
           async

@@ -24,6 +24,6 @@ jobs:
           ssh-keyscan "122.51.11.120" >> ~/.ssh/known_hosts
       - name: deploy #部署
         run: |
-          ssh zhangyibu@122.51.11.120 " cd /home/zhangyu/dockerdemo;"
+          ssh zhangyibu@122.51.11.120 "cd /home/zhangyu/dockerdemo"
       - name: delete ssh key #删除 ssh key
         run: rm -rf ~/.ssh/id_rsa

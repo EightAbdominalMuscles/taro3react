@@ -24,6 +24,14 @@ jobs:
           ssh-keyscan "122.51.11.120" >> ~/.ssh/known_hosts
       - name: deploy #部署
         run: |
-          ssh zhangyibu@122.51.11.120 "cd /home/zhangyu/dockerdemo"
+          ssh zhangyibu@122.51.11.120 "
+            cd /home/zhangyu/dockerdemo/taro3react;
+            git remote add origin https://EightAbdominalMuscles:${{secrets.WFP_PASSWORD}}@github.com/EightAbdominalMuscles/taro3react.git -b dev;
+            git checkout dev;
+            git pull origin dev;
+            git remote remove origin;
+            docker-compose build tarodemo;
+            docker-componse up -d;
+          "
       - name: delete ssh key #删除 ssh key
         run: rm -rf ~/.ssh/id_rsa

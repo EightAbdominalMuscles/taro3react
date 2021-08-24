@@ -25,7 +25,7 @@ jobs:
       - name: deploy #部署
         run: |
           ssh zhangyibu@122.51.11.120 "
-            cd /home/EightAbdominalMuscles/taro3react;
+            cd /home/zhangyibu/EightAbdominalMuscles/taro3react;
             git remote add origin https://EightAbdominalMuscles:${{secrets.WFP_PASSWORD}}@github.com/EightAbdominalMuscles/taro3react.git -b dev;
             git checkout dev;
             git pull origin dev;

@@ -28,7 +28,7 @@ jobs:
             cd /home/zhangyibu/EightAbdominalMuscles/taro3react;
             git init;
             git remote add origin https://EightAbdominalMuscles:${{secrets.WFP_PASSWORD}}@github.com/EightAbdominalMuscles/taro3react.git;
-            git checkout dev;
+            git checkout origin dev;
             git pull origin dev;
             git remote remove origin;
             docker-compose build tarodemo;

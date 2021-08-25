@@ -17,10 +17,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - name: lint
-        run: |
-          npm i
-          npm run lint
+      # - name: lint
+      #   run: |
+      #     npm i
+      #     npm run lint
   test2:
     runs-on: ubuntu-latest
     steps:
